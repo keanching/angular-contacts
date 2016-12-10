@@ -1,0 +1,55 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <strong>Search Results</strong> <span class="badge" ng-if="!searchResultsCtrl.isInitialPageLoad">{{searchResultsCtrl.results.length}}</span>
+        </h3>
+    </div>
+    <div class="panel-body">
+        <div ng-if="searchResultsCtrl.showSpinner">
+            Searching... <i class="fa fa-spinner fa-pulse fa-lg"></i>
+        </div>
+        
+        <div ng-if="!searchResultsCtrl.showSpinner">
+            <div ng-if="searchResultsCtrl.isInitialPageLoad">
+                <em>Please submit a search</em>
+            </div>
+    
+            <div ng-if="!searchResultsCtrl.isInitialPageLoad && searchResultsCtrl.results.length <= 0">
+                No contacts found
+            </div>
+            
+            <div ng-if="!searchResultsCtrl.isInitialPageLoad && searchResultsCtrl.results.length > 0">
+                <div ng-repeat="contact in searchResultsCtrl.results track by contact.id">
+                    <div class="contact-well pull-left" ng-click="searchResultsCtrl.displayContactDetails(contact.id)">
+                        <i class="glyphicon glyphicon-user" style="color:#aaa; font-size:40px"></i>
+                        <span style="vertical-align:15px; margin-left:5px"><strong>{{contact.firstName}} {{contact.lastName}} {{contact.suffix}}</strong></span>
+                        <i ng-class="contact.isFavorite ? 'fa fa-star fa-lg pull-right' : 'fa fa-star-o fa-lg pull-right'"
+                           ng-style="{margin: '12px 5px',
+                                      color: contact.isFavorite ? 'orange' : ''}"
+                           ng-click="searchResultsCtrl.addRemoveFavorite(contact); $event.stopPropagation()"
+                           data-toggle="tooltip" data-placement="right" data-container="body" title="Add to favorites or remove from favorites" kctooltip>
+                        </i>
+                        <!-- Uncomment to add more icons -->
+                        <!-- <i class="fa fa-pencil pull-right" style="margin:12px 5px" title="Edit contact"></i> -->
+                        <hr style="margin:5px 0px">
+                        <i class="fa fa-envelope" style="margin-right:5px"></i> {{contact.email}}<br>
+                        <i class="fa fa-phone" style="margin-right:7px"></i> {{contact.phone}}<br>
+                        <i class="fa fa-calendar" style="margin-right:5px"></i> {{contact.dateOfBirth | date:"MM/dd/yyyy"}}
+                    </div>
+                    <div class="clearfix" ng-if="($index + 1) % 3 == 0"></div>
+                </div>
+            </div>
+<!--             <div class="row" ng-repeat="contact in searchResultsCtrl.results track by contact.id" ng-if="$index % 3 == 0"> -->
+<!--                 <div class="col-sm-12 col-md-4" ng-if="$index < searchResultsCtrl.results.length"> -->
+<!--                     {{searchResultsCtrl.results[$index].firstName}} {{searchResultsCtrl.results[$index].lastName}} {{searchResultsCtrl.results[$index].suffix}}</span> -->
+<!--                 </div> -->
+<!--                 <div class="col-sm-12 col-md-4" ng-if="$index + 1 < searchResultsCtrl.results.length"> -->
+<!--                     {{searchResultsCtrl.results[$index + 1].firstName}} {{searchResultsCtrl.results[$index + 1].lastName}} {{searchResultsCtrl.results[$index + 1].suffix}}</span> -->
+<!--                 </div> -->
+<!--                 <div class="col-sm-12 col-md-4" ng-if="$index + 2 < searchResultsCtrl.results.length"> -->
+<!--                     {{searchResultsCtrl.results[$index + 2].firstName}} {{searchResultsCtrl.results[$index + 2].lastName}} {{searchResultsCtrl.results[$index + 2].suffix}}</span> -->
+<!--                 </div> -->
+<!--             </div> -->
+        </div>
+    </div>
+</div>

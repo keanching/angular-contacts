@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="60 seconds">
+    <!-- Define appenders. -->
+    <appender name="stdoutConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d::${HOSTNAME}::[%thread]::%-5level::%logger{50}::%msg%n</pattern>
+        </encoder>
+        <target>System.out</target>
+    </appender>
+    
+    <!-- Set the levels for each package and for 3rd party libraries. -->
+    <!-- If appender-ref is not specified then it will use the appender of the rootLogger. -->
+    <logger name="com.intecore.angularcontacts" additivity="false" level="DEBUG">
+        <appender-ref ref="stdoutConsoleAppender" />
+    </logger>
+    
+    <root level="INFO">
+        <appender-ref ref="stdoutConsoleAppender" />
+    </root>
+</configuration>

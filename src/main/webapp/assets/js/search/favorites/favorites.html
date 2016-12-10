@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-4">
+        <div ng-if="favCtrl.showSpinner">
+            <span style="margin-left:15px">Loading... <i class="fa fa-spinner fa-pulse fa-lg"></i></span>
+        </div>
+        
+        <div ng-if="!favCtrl.showSpinner">
+            <div ng-if="favCtrl.favList.length <= 0">
+                No favorites found
+            </div>
+            
+            <div ng-if="favCtrl.favList.length > 0">
+                <div class="list-group">
+                    <button type="button" class="list-group-item" ng-repeat="contact in favCtrl.favList | orderBy:'firstName'" ng-click="favCtrl.displayContactDetails(contact.id)">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <i class="fa fa-user fa-3x" style="color:#aaa"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <span><strong>{{contact.firstName}} {{contact.lastName}} {{contact.suffix}}</strong></span><br>
+                                <span>{{contact.companyName}}</span><br>
+                                <span style="color:#337ab7">{{contact.email}}</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- 
+                <div ng-repeat="contact in favCtrl.favList track by contact.id">
+                    <div class="contact-well pull-left" style="min-width:360px">
+                        <i class="glyphicon glyphicon-user" style="color:#aaa; font-size:40px"></i>
+                        <span style="vertical-align:15px; margin-left:5px"><strong>{{contact.firstName}} {{contact.lastName}} {{contact.suffix}}</strong></span>
+                        <hr style="margin:5px 0px">
+                        <i class="fa fa-envelope" style="margin-right:5px"></i> {{contact.email}}<br>
+                        <i class="fa fa-phone" style="margin-right:7px"></i> {{contact.phone}}<br>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,7 +5,11 @@ A contacts application using Spring Boot + AngularJS.
 To run the app:
 - `mvn spring-boot:run`
 - Open url in browser: http://localhost:8080/angular-contacts
-- For a prod build: `mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=prd"`
+
+For a prod build
+================
+- `grunt`
+- `mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=prd"`
 
 # Follow instructions below for local development
 

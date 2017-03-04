@@ -16,7 +16,7 @@ Located at [http://intecore-demo.com/angular-contacts](http://intecore-demo.com/
 
 * `grunt` then `mvn package` to create a deployable war file
 
-## Follow instructions below for local development
+# Follow instructions below for local development
 
 ## Install Git
 

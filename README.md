@@ -1,6 +1,6 @@
-# angular-contacts by Kean Ching
+# angular-contacts
 
-A contacts application using Spring Boot + AngularJS.
+A contacts application using Spring Boot + AngularJS
 
 ## Online demo
 
@@ -54,3 +54,6 @@ dependencies are required for production use, and assumed required for dev as we
 
 ## Watch files while developing
 - `grunt watch`
+
+## Contact
+For more info contact Kean Ching at kching25@gmail.com

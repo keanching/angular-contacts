@@ -68,12 +68,16 @@
         <footer class="footer" style="margin-bottom:40px">
             <div class="container">
                 <div class="row">
+                    <br>
                     <div class="col-md-12 text-center">
                         <span class="label label-default" style="color:#555; background-color:#eee; padding:5px 10px; font-size:95%">
                             Copyright &#169; 2016 - Kean Ching - Intecore Technologies, Inc.
                         </span>
                     </div>
                 </div>
+                <br>
+                <hr>
+                Debug router state using D3:
                 <br>
                 <br>
                 <div class="row">

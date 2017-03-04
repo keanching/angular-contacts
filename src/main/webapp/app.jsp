@@ -77,7 +77,7 @@
                 </div>
                 <br>
                 <hr>
-                Debug router state using D3:
+                Debug router state using D3
                 <br>
                 <br>
                 <div class="row">

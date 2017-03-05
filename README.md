@@ -1,6 +1,6 @@
 # angular-contacts
 
-A contacts application using Spring Boot + AngularJS
+A contacts application using Spring Boot + AngularJS by Kean Ching.
 
 Features
 

@@ -6,18 +6,19 @@
 /target
 
 # dependencies
-/node_modules
-/bower_components
+node_modules
+bower_components
 
 # IDEs and editors
-/.idea
-/.vscode
+.idea
+.vscode
 .project
 .classpath
 .c9/
 *.launch
-.settings/
+.settings
 .tmp
+.history
 
 # misc
 /.sass-cache
@@ -27,7 +28,6 @@
 npm-debug.log
 testem.log
 /typings
-/.history
 
 # e2e
 /e2e/*.js

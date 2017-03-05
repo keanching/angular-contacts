@@ -2,10 +2,6 @@
 
 A contacts application using Spring Boot + AngularJS
 
-## Online demo
-
-Located at [http://intecore-demo.com/angular-contacts](http://intecore-demo.com/angular-contacts)
-
 Features
 
 * Advanced routing using ui-router (sticky tabs)
@@ -13,6 +9,10 @@ Features
 * Bootstrap theme
 * Project structure organized by features
 * Following conventions of the angular style guide
+
+## Online demo
+
+Located at [http://intecore-demo.com/angular-contacts](http://intecore-demo.com/angular-contacts)
 
 ## Running locally
 

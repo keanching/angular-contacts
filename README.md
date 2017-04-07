@@ -62,6 +62,3 @@ dependencies are required for production use, and assumed required for dev as we
 
 ## Watch files while developing
 - `grunt watch`
-
-## Contact
-For more info contact Kean Ching at kching25@gmail.com

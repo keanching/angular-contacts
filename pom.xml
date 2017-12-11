@@ -5,7 +5,7 @@
 
     <groupId>com.mycorp</groupId>
     <artifactId>angular-contacts</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>war</packaging>
     
     <!-- Inherit defaults from Spring Boot -->
@@ -89,9 +89,7 @@
         </dependency>
     </dependencies>
 
-    <!-- Package as an executable jar -->
     <build>
-        <finalName>angular-contacts</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -103,6 +101,15 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <!-- Deploy to heroku as a war file -->
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>1.2.5</version>
+                <configuration>
+                    <appName>intecore-angular-contacts</appName>
+                </configuration>
             </plugin>
         </plugins>
     </build>

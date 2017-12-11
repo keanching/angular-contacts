@@ -12,12 +12,12 @@ Features
 
 ## Online demo
 
-Located at [http://intecore-demo.com/angular-contacts](http://intecore-demo.com/angular-contacts)
+Located at [https://intecore-angular-contacts.herokuapp.com](https://intecore-angular-contacts.herokuapp.com)
 
 ## Running locally
 
 * `mvn spring-boot:run`
-* Open url in browser: http://localhost:8080/angular-contacts
+* Open url in browser: http://localhost:8080
 * Optionally, set `spring.profiles.active` property to specify the environment, for example: `mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=prd"`
 
 ## Build and deploy

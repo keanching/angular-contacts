@@ -1,7 +1,8 @@
 (function() {
     "use strict";
 
-    var WEB_CTX_URL = "/angular-contacts";
+//    var WEB_CTX_URL = "/angular-contacts";
+    var WEB_CTX_URL = "";
     var IMG_URL = WEB_CTX_URL + "/assets/img";
     var REST_API_URL = WEB_CTX_URL + "/api";
     var DATE_FORMAT_LONG = "MMM Do YYYY";

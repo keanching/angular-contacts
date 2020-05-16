@@ -71,7 +71,7 @@
                     <br>
                     <div class="col-md-12 text-center">
                         <span class="label label-default" style="color:#555; background-color:#eee; padding:5px 10px; font-size:95%">
-                            Copyright &#169; 2018 - Kean Ching - Intecore Technologies, Inc.
+                            Copyright &#169; 2018 - Kean Ching
                         </span>
                     </div>
                 </div>

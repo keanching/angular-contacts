@@ -1,0 +1,53 @@
+<div class="container" style="padding-top:65px">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div ng-if="contactCtrl.showSuccessMsg">
+                <div class="alert alert-success text-center" role="alert">
+                    <strong>Thank you!</strong> Your message was submitted.
+                </div>
+            </div>
+            
+            <div ng-if="!contactCtrl.showSuccessMsg">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="fullName" class="control-label"><i class="glyphicon glyphicon-user"></i> Name</label>
+                            <input id="fullName" type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="email" class="control-label"><i class="glyphicon glyphicon-envelope"></i> Email Address</label>
+                            <input id="email" type="text" class="form-control" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="field1" class="control-label"><i class="glyphicon glyphicon-envelope"></i> Another Field</label>
+                            <input id="field1" type="text" class="form-control" placeholder="Another Field">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="field2" class="control-label"><i class="glyphicon glyphicon-envelope"></i> Another Field</label>
+                            <input id="field2" type="text" class="form-control" placeholder="Another Field">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="field3" class="control-label"><i class="glyphicon glyphicon-envelope"></i> Another Field</label>
+                            <input id="field3" type="text" class="form-control" placeholder="Another Field">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 form-group">
+                            <label for="message" class="control-label"><i class="glyphicon glyphicon-comment"></i> Message</label>
+                            <textarea id="message" class="form-control" rows="12" placeholder="Enter your message here"></textarea>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" ng-click="contactCtrl.submitMessage()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

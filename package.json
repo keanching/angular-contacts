@@ -2,7 +2,7 @@
   "name": "angular-contacts",
   "version": "1.0.0",
   "description": "A contacts management application using Spring Boot + AngularJS by Kean Ching",
-  "homepage": "https://github.com/intecore",
+  "homepage": "https://github.com/keanching",
   "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/intecore/angular-contacts.git"
+    "url": "https://github.com/keanching/angular-contacts.git"
   },
   "devDependencies": {
     "dateformat": "~1.0.11",

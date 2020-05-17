@@ -12,7 +12,7 @@ Features
 
 ## Online demo
 
-Located at [https://intecore-angular-contacts.herokuapp.com](https://intecore-angular-contacts.herokuapp.com)
+Located at [https://kean-angular-contacts.herokuapp.com](https://kean-angular-contacts.herokuapp.com)
 
 ## Running locally
 

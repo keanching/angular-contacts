@@ -1,4 +1,4 @@
-package com.intecore.angularcontacts.service;
+package com.keanching.angularcontacts.service;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -23,8 +23,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Collections2;
-import com.intecore.angularcontacts.domain.Contact;
-import com.intecore.angularcontacts.dto.SearchCriteria;
+import com.keanching.angularcontacts.domain.Contact;
+import com.keanching.angularcontacts.dto.SearchCriteria;
 
 @Service
 public class ContactServiceImpl implements ContactService {

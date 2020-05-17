@@ -1,4 +1,4 @@
-package com.intecore.angularcontacts;
+package com.keanching.angularcontacts;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -11,14 +11,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.intecore.angularcontacts.domain.Contact;
-import com.intecore.angularcontacts.dto.SearchCriteria;
-import com.intecore.angularcontacts.service.ContactService;
+import com.keanching.angularcontacts.domain.Contact;
+import com.keanching.angularcontacts.dto.SearchCriteria;
+import com.keanching.angularcontacts.service.ContactService;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@RunWith(SpringRunner.class)
 @ContextConfiguration
 public class ContactServiceTest {
     private static final Logger logger = LoggerFactory.getLogger(ContactServiceTest.class);

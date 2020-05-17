@@ -8,7 +8,7 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-    <groupId>com.intecore</groupId>
+    <groupId>com.keanching</groupId>
     <artifactId>angular-contacts</artifactId>
     <version>1.0.2</version>
     <packaging>jar</packaging>

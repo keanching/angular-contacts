@@ -1,4 +1,4 @@
-package com.intecore.angularcontacts.util;
+package com.keanching.angularcontacts.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.intecore.angularcontacts.dto;
+package com.keanching.angularcontacts.dto;
 
 import java.util.List;
 

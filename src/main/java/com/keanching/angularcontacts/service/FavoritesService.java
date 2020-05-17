@@ -1,4 +1,4 @@
-package com.intecore.angularcontacts.service;
+package com.keanching.angularcontacts.service;
 
 import java.util.List;
 

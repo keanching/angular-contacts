@@ -1,4 +1,4 @@
-package com.intecore.angularcontacts.domain;
+package com.keanching.angularcontacts.domain;
 
 import java.util.Date;
 

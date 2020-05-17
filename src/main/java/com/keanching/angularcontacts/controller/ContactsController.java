@@ -1,4 +1,4 @@
-package com.intecore.angularcontacts.controller;
+package com.keanching.angularcontacts.controller;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -18,13 +18,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.google.common.collect.Lists;
-import com.intecore.angularcontacts.domain.Contact;
-import com.intecore.angularcontacts.dto.SearchCriteria;
-import com.intecore.angularcontacts.dto.UiResponse;
-import com.intecore.angularcontacts.dto.UiResponseStatus;
-import com.intecore.angularcontacts.service.ContactService;
-import com.intecore.angularcontacts.util.CommonUtils;
-import com.intecore.angularcontacts.util.Constants;
+import com.keanching.angularcontacts.domain.Contact;
+import com.keanching.angularcontacts.dto.SearchCriteria;
+import com.keanching.angularcontacts.dto.UiResponse;
+import com.keanching.angularcontacts.dto.UiResponseStatus;
+import com.keanching.angularcontacts.service.ContactService;
+import com.keanching.angularcontacts.util.CommonUtils;
+import com.keanching.angularcontacts.util.Constants;
 
 @RestController
 @RequestMapping(Constants.REST_URL_PREFIX)

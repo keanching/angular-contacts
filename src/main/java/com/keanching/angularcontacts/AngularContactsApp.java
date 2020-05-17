@@ -1,11 +1,10 @@
-package com.intecore.angularcontacts;
+package com.keanching.angularcontacts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication // same as @Configuration @EnableAutoConfiguration @ComponentScan
-public class AngularContactsApp extends SpringBootServletInitializer{
+public class AngularContactsApp {
     public static void main(String[] args) {
         SpringApplication.run(AngularContactsApp.class, args);
     }

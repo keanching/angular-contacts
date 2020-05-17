@@ -1,9 +1,9 @@
-package com.intecore.angularcontacts.service;
+package com.keanching.angularcontacts.service;
 
 import java.util.List;
 
-import com.intecore.angularcontacts.domain.Contact;
-import com.intecore.angularcontacts.dto.SearchCriteria;
+import com.keanching.angularcontacts.domain.Contact;
+import com.keanching.angularcontacts.dto.SearchCriteria;
 
 public interface ContactService {
     public List<Contact> getAll() throws Exception;

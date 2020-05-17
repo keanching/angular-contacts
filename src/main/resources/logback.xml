@@ -10,7 +10,7 @@
     
     <!-- Set the levels for each package and for 3rd party libraries. -->
     <!-- If appender-ref is not specified then it will use the appender of the rootLogger. -->
-    <logger name="com.intecore.angularcontacts" additivity="false" level="DEBUG">
+    <logger name="com.keanching.angularcontacts" additivity="false" level="DEBUG">
         <appender-ref ref="stdoutConsoleAppender" />
     </logger>
     

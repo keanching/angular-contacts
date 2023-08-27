@@ -1,0 +1,1 @@
+HEROKU_API_KEY="2b439354-1500-40f0-88a6-7b82b89a5550" ./mvnw clean heroku:deploy
